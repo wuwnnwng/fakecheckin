@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">假打卡</string>
+    <string name="app_title">假打卡 Demo</string>
+    <string name="app_subtitle">一个可运行的简单 Android 示例</string>
+    <string name="label_location">打卡地点</string>
+    <string name="label_time">打卡时间</string>
+    <string name="label_status">当前状态</string>
+    <string name="demo_location">演示园区 · 模拟位置</string>
+    <string name="time_placeholder">尚未打卡</string>
+    <string name="status_idle">待打卡</string>
+    <string name="status_done">已打卡</string>
+    <string name="result_placeholder">点击下方按钮完成一次演示打卡。</string>
+    <string name="check_in_success">打卡成功\n时间：%1$s\n地点：演示园区 · 模拟位置</string>
+    <string name="check_in">立即打卡</string>
+    <string name="checked_in">已完成打卡</string>
+    <string name="reset">重置演示</string>
+    <string name="check_in_snackbar">演示打卡已记录</string>
+</resources>
