@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#0F9D8E</color>
-    <color name="primary_dark">#0B7A6F</color>
-    <color name="background">#F4F7F6</color>
+    <color name="primary">#6B5B73</color>
+    <color name="primary_dark">#53445A</color>
+    <color name="background">#F6F3F0</color>
     <color name="card">#FFFFFFFF</color>
-    <color name="card_stroke">#E2EBE9</color>
-    <color name="text_primary">#1C2B29</color>
-    <color name="text_secondary">#6B7C79</color>
+    <color name="card_stroke">#E8E2DC</color>
+    <color name="text_primary">#2B2629</color>
+    <color name="text_secondary">#7A7276</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="ic_launcher_background">#0F9D8E</color>
+    <color name="danger">#C0564A</color>
+    <color name="ok">#4C8C6A</color>
+    <color name="ic_launcher_background">#6B5B73</color>
 </resources>

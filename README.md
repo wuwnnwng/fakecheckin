@@ -1,57 +1,30 @@
-# 假打卡（fakecheckin）
+# IPL Care（家用强脉冲光脱毛仪 APP）
 
-一个可运行的 Android Demo，用来演示「打卡」界面流程。打开应用后可以看到模拟地点、当前状态，点击按钮完成一次打卡记录。
+按《家用强脉冲光脱毛仪APP需求规格书》实现的 Android Demo。已去掉原先的打卡/地图功能。
 
-这是界面演示，**不会读取真实定位，也不会修改系统位置**。
+默认语言为中文。登录页右上角和「我的 → 设置」均可切换中文 / English。
 
-## 功能
+## 功能（仅需求文档范围）
 
-- 展示固定的演示地点：`演示园区 · 模拟位置`
-- 显示打卡时间、当前状态（待打卡 / 已打卡）
-- 点击「立即打卡」：写入当前时间，状态变为已打卡，并弹出提示
-- 点击「重置演示」：清空本次记录，回到待打卡
+- 注册 / 登录 / 忘记密码 / 游客模式 / 第三方登录入口（微信、支付宝、Google）
+- 设备扫描连接、信息查看、解绑、扫码绑定占位
+- 模式切换、部位、档位、冰敷、启停、定时、脉冲计数
+- 使用记录自动生成、筛选、备注（游客不保存）
+- 消息通知分类
+- 个人中心、设置、FAQ、反馈、关于
 
-## 运行环境
+蓝牙控制与后端目前为本地占位，接口地址和出入参见 `docs/api-contract.md`，表结构见 `sql/schema.sql`。
 
-- Android 7.0（API 24）及以上
-- 构建需要 JDK 17、Android SDK（compileSdk 35）
-- 包名：`com.wwn`
+## 演示账号
 
-## 如何运行
+- 手机号：`13800000000`
+- 密码：`abc123`
+- 短信验证码：`123456`
 
-1. 用 IntelliJ IDEA / Android Studio 打开本项目
-2. Gradle JVM 选择 JDK 17，等待 Sync 完成
-3. 启动模拟器，或用 USB 连接已开启调试的手机
-4. 运行 `app`
+## 运行
 
-没有设备时会出现 `No target device found`，需要先打开 Device Manager 创建并启动模拟器。
+Android 10（API 29）+，JDK 17。Sync 后运行 `app`，从登录页进入。
 
-## 如何打安装包
+## 替换后端
 
-在项目根目录执行：
-
-```powershell
-.\gradlew.bat :app:assembleDebug
-```
-
-生成的文件：
-
-`app/build/outputs/apk/debug/app-debug.apk`
-
-把该 APK 发给其他人，对方允许「安装未知来源应用」后即可安装。对方系统需 Android 7.0 及以上。
-
-这是 debug 包，适合试用，不能上应用商店。
-
-## 项目结构
-
-```
-fakecheckin/
-├── settings.gradle.kts      # 仓库与模块
-├── app/build.gradle.kts     # 应用依赖
-└── app/src/main/
-    ├── AndroidManifest.xml
-    ├── java/com/wwn/MainActivity.kt
-    └── res/layout/activity_main.xml
-```
-
-依赖从阿里云 Maven 镜像拉取（Google / Central / Gradle Plugin），Gradle 发行包使用腾讯云镜像。
+改 `ApiConfig.BASE_URL` 和各 path，把 `AppRepository` 里的本地逻辑换成 HTTPS 请求即可。
