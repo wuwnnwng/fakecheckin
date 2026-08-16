@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView android:id="@+id/tvDeviceBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/card" android:padding="14dp" android:text="@string/device_none" android:textColor="@color/text_primary" android:textStyle="bold" />
+        <Button android:id="@+id/btnOpenDevice" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/scan_devices" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/mode_label" android:textColor="@color/text_secondary" />
+        <RadioGroup android:id="@+id/rgMode" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <RadioButton android:id="@+id/rbManual" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/mode_manual" />
+            <RadioButton android:id="@+id/rbAuto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mode_auto" />
+            <RadioButton android:id="@+id/rbSkin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mode_skin" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/part_label" android:textColor="@color/text_secondary" />
+        <Spinner android:id="@+id/spPart" android:layout_width="match_parent" android:layout_height="48dp" />
+
+        <TextView android:id="@+id/tvGear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/gear" android:textColor="@color/text_primary" />
+        <SeekBar android:id="@+id/sbGear" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="9" android:progress="2" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swIce" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ice_off" />
+
+        <TextView android:id="@+id/tvPulse" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="@color/text_secondary" />
+        <TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/primary" android:textStyle="bold" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnTimer5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/min_5" />
+            <Button android:id="@+id/btnTimer10" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/min_10" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnStart" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/start" />
+            <Button android:id="@+id/btnPause" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/pause" />
+            <Button android:id="@+id/btnStop" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/stop" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

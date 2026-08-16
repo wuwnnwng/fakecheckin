@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/tab_control" android:title="@string/tab_control" android:icon="@drawable/ic_launcher_foreground" />
+    <item android:id="@+id/tab_records" android:title="@string/tab_records" android:icon="@drawable/ic_launcher_foreground" />
+    <item android:id="@+id/tab_messages" android:title="@string/tab_messages" android:icon="@drawable/ic_launcher_foreground" />
+    <item android:id="@+id/tab_me" android:title="@string/tab_me" android:icon="@drawable/ic_launcher_foreground" />
+</menu>

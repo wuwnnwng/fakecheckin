@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IPL Care</string>
+    <string name="welcome_title">جهاز إزالة الشعر بالضوء</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="register">تسجيل</string>
+    <string name="guest">وضع الزائر</string>
+    <string name="tab_control">التحكم</string>
+    <string name="tab_records">السجلات</string>
+    <string name="tab_messages">الرسائل</string>
+    <string name="tab_me">حسابي</string>
+</resources>

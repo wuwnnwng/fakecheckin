@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+        <TextView android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_primary" android:textSize="22sp" android:textStyle="bold" />
+        <EditText android:id="@+id/et1" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="16dp" />
+        <EditText android:id="@+id/et2" android:layout_width="match_parent" android:layout_height="52dp" />
+        <EditText android:id="@+id/et3" android:layout_width="match_parent" android:layout_height="52dp" />
+        <TextView android:id="@+id/tvSpinnerHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textColor="@color/text_secondary" android:visibility="gone" />
+        <Spinner android:id="@+id/spinner" android:layout_width="match_parent" android:layout_height="48dp" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/sw1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/sw2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/sw3" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/sw4" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/sw5" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/tvBody" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="@color/text_secondary" />
+        <Button android:id="@+id/btnPrimary" android:layout_width="match_parent" android:layout_height="52dp" android:text="@string/save" />
+        <Button android:id="@+id/btnSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

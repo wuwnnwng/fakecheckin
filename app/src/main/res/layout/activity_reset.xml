@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reset_password" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/text_primary" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/demo_sms_hint" android:textColor="@color/text_secondary" />
+    <EditText android:id="@+id/etPhone" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="20dp" android:hint="@string/phone" android:inputType="phone" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <EditText android:id="@+id/etSms" android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:hint="@string/sms_code" android:inputType="number" />
+        <Button android:id="@+id/btnSms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_code" />
+    </LinearLayout>
+    <EditText android:id="@+id/etPassword" android:layout_width="match_parent" android:layout_height="52dp" android:hint="@string/new_password" android:inputType="textPassword" />
+    <Button android:id="@+id/btnSubmit" android:layout_width="match_parent" android:layout_height="52dp" android:text="@string/reset_password" />
+</LinearLayout>

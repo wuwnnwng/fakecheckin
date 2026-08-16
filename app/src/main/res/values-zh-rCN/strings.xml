@@ -1,0 +1,3 @@
+<resources>
+    <!-- 默认中文在 values/strings.xml，切换语言时走 LocaleHelper，不再在此维护副本 -->
+</resources>
