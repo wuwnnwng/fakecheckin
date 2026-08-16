@@ -1,1 +1,6 @@
-/build
+# 编译缓存不入库，outputs 下的安装包需要被 Git 管理
+/build/intermediates/
+/build/generated/
+/build/tmp/
+/build/kotlin/
+/build/.cxx

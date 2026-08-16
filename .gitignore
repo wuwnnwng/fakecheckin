@@ -13,6 +13,7 @@
 .externalNativeBuild
 .cxx
 *.apk
+!app/build/outputs/apk/**/*.apk
 *.ap_
 *.dex
 app/release/
